@@ -2,17 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eramy Industries</title>
   <style>
     body {
-      font-family: sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      font-family: Arial, sans-serif;
       text-align: center;
-      margin-top: 15%;
+      padding-top: 100px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+    .logo {
+      width: 200px;
+    }
+    .division-logo {
+      width: 100px; /* 50% of main logo */
     }
   </style>
 </head>
 <body>
-  <h1>🚧 Eramy Industries</h1>
-  <p>Our future is under construction. Check back soon!</p>
+  <h1 style="display: none;">Eramy Industries</h1>
+  <div class="logo-container">
+    <img src="images/eramy-industries-logo.png" alt="Eramy Industries Logo" class="logo">
+    <img src="images/eramy-wellness-ai-logo.png" alt="Eramy Wellness AI Logo" class="division-logo">
+  </div>
+  <p>Empathy. Innovation. Purpose.<br>We’re building something beautiful. Stay tuned.</p>
 </body>
 </html>
