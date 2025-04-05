@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wellness Configuration Tool</title>
+  <link rel="stylesheet" href="../style/style.css" />
+  <style>
+    /* Collapsible Section Styles */
+    .collapsible {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+
+    .collapsible-header {
+      background-color: #f9f9f9;
+      padding: 1rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .collapsible-header:hover {
+      background-color: #e9e9e9;
+    }
+
+    .collapsible-header h2 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .collapsible-header .indicator {
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .collapsible-content {
+      display: none;
+      padding: 1rem;
+      background-color: #fff;
+    }
+
+    .collapsible.open .collapsible-content {
+      display: block;
+    }
+
+    .collapsible.open .indicator {
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+<body>
+  <header class="banner">
+    <p>Prototype – Not for Clinical Use</p>
+  </header>
+  <main>
+    <h1>Wellness Configuration Tool</h1>
+    <section class="config-sections">
+      <!-- Collapsible Section: Personality & Identity -->
+      <div class="collapsible">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <h2>Personality & Identity</h2>
+          <span class="indicator">▶</span>
+        </div>
+        <div class="collapsible-content">
+          <p>Placeholder for Personality & Identity inputs.</p>
+        </div>
+      </div>
+
+      <!-- Collapsible Section: Mental Health Support -->
+      <div class="collapsible">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <h2>Mental Health Support</h2>
+          <span class="indicator">▶</span>
+        </div>
+        <div class="collapsible-content">
+          <p>Placeholder for Mental Health Support inputs.</p>
+        </div>
+      </div>
+
+      <!-- Collapsible Section: Fitness & Activity -->
+      <div class="collapsible">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <h2>Fitness & Activity</h2>
+          <span class="indicator">▶</span>
+        </div>
+        <div class="collapsible-content">
+          <p>Placeholder for Fitness & Activity inputs.</p>
+        </div>
+      </div>
+    </section>
+    <button id="startConfigBtn" disabled>Start Configuration</button>
+  </main>
+
+  <script>
+    // Simple JavaScript to toggle collapsible sections
+    function toggleCollapsible(header) {
+      const collapsible = header.parentElement;
+      collapsible.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
