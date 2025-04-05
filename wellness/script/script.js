@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     button.addEventListener("click", function () {
       if (checkbox.checked) {
-        window.location.href = "/boc/configure/"; // Adjust this path if needed
+        window.location.href = "/wellness/configure/"; // Adjust this path if needed
       }
     });
   });
