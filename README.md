@@ -1,2 +1,2 @@
 # eramy.dev
-The landing page for Eramy Industries
+The landing page for Eramy Labs
